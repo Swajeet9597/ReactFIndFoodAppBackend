@@ -9,7 +9,7 @@ const cors = require("cors")
 const cookieParser = require("cookie-parser")
 
 const corsOption = {
-    origin: "http://localhost:5173",
+    origin: "https://findfoodreact.vercel.app",
     methods:"POST,GET,PATCH,DELETE,HEAD",
     credentials: true,
 }

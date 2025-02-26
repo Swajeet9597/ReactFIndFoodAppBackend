@@ -84,6 +84,13 @@ const loginUser = async(req,res)=>{
                 secure: false
             }
 
+            // const tokenOption = {
+            //     httpOnly :true,
+            //     sameSite: "lax",
+            //     secure: false
+            // }
+
+
 
 
             await res.cookie("token",token,tokenOption)

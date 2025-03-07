@@ -68,6 +68,13 @@ const loginUser = async(req,res)=>{
 
         // console.log("pass",checkPass);
 
+        if(!checkPass){
+            return res.status(401).json({
+                success:false,
+                msg: "Wrong password..."
+            })
+        }
+
         if(checkPass){
 
             const payLoad ={
